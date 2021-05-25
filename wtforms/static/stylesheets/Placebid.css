@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    background-color: greenyellow;
+}
+
+.main-container{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.button {
+    margin-top: 40px;
+    cursor:pointer;
+    width:10%;
+    border-radius: 100px;
+}
+.button:hover{
+    background-color: lightgrey;
+}
+.navbar a{
+    margin-right:20px;
+}
+.information-container{
+    background-color: #9dd12e;
+    width: 800;
+    height: 500;
+    text-align: center;
+    margin:40px auto;
+    
+}

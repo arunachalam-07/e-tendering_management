@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showing available tenders</title>
+    <link rel="stylesheet" href="/static/stylesheets/showing_tender.css">
+  
+</head>
+<body id="body1">
+    <div class="main-container">
+      <div class="title-container">
+        <h1 class="title">Welcome to Tender Organization</h1>
+        <nav class="navbar">
+            <a href="{{url_for('placebid')}}">Place A bid</a>
+            <a href="{{url_for('viewwinner')}}">Winner</a>
+        </nav>
+      </div>
+      <div class="information-container">
+          <div class="text-information">
+              <h2>Tender details</h2>
+              <div class="Tender_Name">
+                  <label>Tender Name</label>:<b>{{arr[0]}}</b>
+              </div>
+              <div class='Description'>
+                  <label>Description</label>:<b>{{arr[1]}}</b>
+              </div>
+              <div class="Quote_amount">
+                  <label>Quote Amount</label>:<b>{{arr[2]}}</b>
+
+              </div>
+              <div class="ClosingDate">
+                  <label>Closing Date</label>:<b>{{bc}}</b>
+              </div>
+          </div>
+      </div>
+    </div>
+</body>
+</html>

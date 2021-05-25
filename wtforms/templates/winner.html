@@ -1,0 +1,24 @@
+{% extends "bootstrap/base.html"%}
+  
+{%block content%}
+    <body>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin:0 auto;">
+         <a class="navbar-brand" href="{{url_for('viewtender')}}">Tenders</a>
+         <a class="navbar-brand" href="{{url_for('viewwinner')}}">Winner</a>
+        <form action ='{{ url_for("declare_winner")}}'method = post>
+            <fieldset>
+               <legend style="align-items: center;">Declare winner</legend>
+             
+               
+               <div style = "font-size:20px; font-weight:bold; margin-left:150px;">
+                  <b>Place address</b><br>
+                  <input type="text" name="address" id="addr">
+               </div>
+            
+                <input type="submit" value='submit'></input>
+        
+            </fieldset>
+         </form>
+    </body>
+{%endblock%}

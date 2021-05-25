@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/stylesheets/Placebid.css">
+    <title>PlaceBid</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="information-container">
+        <h1>Place Your Bid</h1>
+        <nav class="navbar">
+            <a href="{{url_for('viewtender')}}">Tenders</a>
+            <a href="{{url_for('viewwinner')}}">Winner</a>
+        </nav>
+        <form class="form" action="{{url_for('submitbid')}}" method="POST">
+        <div class="place_your_address">
+            <label ><h3>Address</h3></label>
+            <input type='text' name="address" id="addr" required>
+        </div>
+        <div class="quotation">
+            <h3>Quote</h3>
+            <input type="text" name="test" id="test" required>
+        </div>
+        <div class="quote_amount">
+            <h3>Amount</h3>
+            <input type="number" name="bid" min=1 id="amount" required>
+        </div>
+        <div class="submit_button">
+            <button type="submit" class="button">submit</button>
+        </div>
+    </form>
+    </div>
+</div> 
+
+</body>
+</html>

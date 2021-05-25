@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap');
+#body1{
+    background-color: lightblue;
+}
+.main-container{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+.title{
+    text-align: center;
+}
+
+.navbar{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:20px;
+    block-size: auto;
+    margin-bottom: 40px;
+}
+.navbar a{
+    margin-right:20px;
+    border-radius: 20px;
+}
+
+.text-information{
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+}
+.information-container{
+    
+    text-align: center;
+    font-size: 15px;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    width:500px;
+    height:450px;
+    border-right: 100px;
+    margin:auto;
+    
+}
+.Tender_Name{
+    margin-bottom: 80px ;
+}
+.Description{
+    margin-bottom: 80px;
+}
+.Quote_amount{
+    margin-bottom:80px;
+}
+.ClosingDate{
+    margin-bottom:80 px;
+}
